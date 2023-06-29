@@ -1,0 +1,34 @@
+﻿<Window x:Class="Registor.View.NewEmployeeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registor.View"
+        mc:Ignorable="d"
+        Title="NewEmployeeView" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="60"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel LastChildFill="False" Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="Новый сотрудник" HorizontalAlignment="Center" DockPanel.Dock="Top" FontSize="20"/>
+            <TextBlock Text="FIO:" DockPanel.Dock="Top" Margin="10 5"/>
+            <TextBox Text="" DockPanel.Dock="Top" Margin="10 5"/>
+            
+            
+
+            <StackPanel DockPanel.Dock="Bottom">
+                <Button Content="Add Employee" Margin="20 5"/>
+                <Button Content="Cancel" Margin="20 5"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
